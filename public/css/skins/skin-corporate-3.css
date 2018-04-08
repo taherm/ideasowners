@@ -14,7 +14,7 @@ html .heading-primary,
 html .lnk-primary,
 html .text-color-primary,
 html .text-primary {
-  color: #0088cc !important;
+  color: #ffffff !important;
 }
 html .heading.heading-primary h1,
 html .heading.heading-primary h2,
@@ -141,25 +141,25 @@ p.drop-caps.drop-caps-style-2:first-letter {
 }
 .nav-pills > li.active > a,
 .nav-pills .nav-link.active {
-  background-color: #0088cc;
+  background-color: #000000;
 }
 .nav-pills > li.active > a:hover,
 .nav-pills .nav-link.active:hover,
 .nav-pills > li.active > a:focus,
 .nav-pills .nav-link.active:focus {
-  background-color: #0088cc;
+  background-color: #000000;
 }
 html .nav-pills-primary a {
-  color: #0088cc;
+  color: #000000;
 }
 html .nav-pills-primary a:hover {
-  color: #0099e6;
+  color: #000000;
 }
 html .nav-pills-primary a:focus {
-  color: #0099e6;
+  color: #000000;
 }
 html .nav-pills-primary a:active {
-  color: #0077b3;
+  color: #000000;
 }
 html .nav-pills-primary .nav-link.active,
 html .nav-pills-primary > li.active > a {
@@ -169,7 +169,7 @@ html .nav-pills-primary .nav-link.active:hover,
 html .nav-pills-primary > li.active > a:hover,
 html .nav-pills-primary .nav-link.active:focus,
 html .nav-pills-primary > li.active > a:focus {
-  background-color: #0088cc;
+  background-color: #000000;
 }
 html .nav-pills-secondary a {
   color: #e36159;
@@ -310,23 +310,23 @@ html .badge-light {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #0088cc;
+  color: #000000;
 }
 .btn-link:hover {
-  color: #0099e6;
+  color: #000000;
 }
 .btn-link:active {
-  color: #0077b3;
+  color: #000000;
 }
 html .btn-primary {
-  background-color: #0088cc;
-  border-color: #0088cc #0088cc #006699;
+  background-color: #000000;
+  border-color: #000000 #000000 #000000;
   color: #ffffff;
 }
 html .btn-primary:hover,
 html .btn-primary.hover {
-  background-color: #00a1f2;
-  border-color: #00aaff #00aaff #0088cc;
+  background-color: #000000;
+  border-color: #000000 #000000 #000000;
   color: #ffffff;
 }
 html .btn-primary:focus,
@@ -1172,7 +1172,7 @@ html.dark section.section-default-scale-9 {
   border-top-color: #f7f7f7 !important;
 }
 section.page-header h1 {
-  border-bottom-color: #0088cc;
+  border-bottom-color: #000000;
 }
 section.page-header.custom-product {
   background-color: #0077b3;
@@ -1997,14 +1997,14 @@ html[dir="rtl"] .tabs.tabs-vertical.tabs-right .nav-tabs li.active .nav-link:foc
 .list.list-icons li a:first-child > .fa:first-child,
 .list.list-icons li > .icons:first-child,
 .list.list-icons li a:first-child > .icons:first-child {
-  color: #0088cc;
-  border-color: #0088cc;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 .list.list-icons.list-icons-style-3 li > .fa:first-child,
 .list.list-icons.list-icons-style-3 li a:first-child > .fa:first-child,
 .list.list-icons.list-icons-style-3 li > .icons:first-child,
 .list.list-icons.list-icons-style-3 li a:first-child > .icons:first-child {
-  background-color: #0088cc;
+  background-color: #000000;
 }
 .list.list-ordened li:before {
   color: #0088cc;
@@ -2936,7 +2936,7 @@ html #header .header-top.header-top-light .dropdown-menu a:focus {
 }
 @media (min-width: 992px) {
   html #header .header-nav-bar-primary {
-    background: #0088cc !important;
+    background: #000000;
     color: #ffffff !important;
   }
   html #header .header-nav-bar-secondary {
@@ -2963,7 +2963,7 @@ html #header .header-top.header-top-light .dropdown-menu a:focus {
 @media (min-width: 992px) {
   #header .header-nav-main.header-nav-main-light nav > ul > li.open > a,
   #header .header-nav-main.header-nav-main-light nav > ul > li:hover > a {
-    color: #0088cc;
+    color: #000000;
   }
   #header .header-nav-main.header-nav-main-light nav > ul > li.open > a.dropdown-toggle:after,
   #header .header-nav-main.header-nav-main-light nav > ul > li:hover > a.dropdown-toggle:after {

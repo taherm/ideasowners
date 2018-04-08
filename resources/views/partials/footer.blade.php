@@ -14,9 +14,7 @@
 					</div>
 					<div class="col-lg-3">
 						<h5 class="mb-2">Contact Us</h5>
-						<span class="phone">(+965)94958700</span>
-						<p class="mb-0">International: (333) 456-6670</p>
-						<p class="mb-0">Fax: (222) 531-8999</p>
+						<span class="phone">(+965)94978803</span>
 						<ul class="list list-icons list-icons-sm">
 							<li>
 								<i class="fa fa-envelope"></i>

@@ -21,7 +21,7 @@
 												<i class="fa fa-phone"></i>
 											</div>
 											<div class="feature-box-info">
-												<h4 class="mb-0">(+965)94958700</h4>
+												<h4 class="mb-0">(+965)94978803</h4>
 												<p>
 													<small>Get in touch with us</small>
 												</p>
@@ -59,7 +59,7 @@
 			                @if($item->children->count() > 0)
 													
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="{{ url($item->url) }}">
+														<a class="dropdown-item dropdown-toggle" style="cursor:default">
 														{{$item->title}}
 														</a>
 														<ul class="dropdown-menu">
