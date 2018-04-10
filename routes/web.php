@@ -50,22 +50,31 @@ Route::get('admin/delete-slider',function () {
 Route::get('admin/add-slider',function () {
     return view('admin.add-slider');
 });
+Route::get('admin/page','AdminController@show');
 Route::get('admin/create-page', function () {
-    return view('admin.pages');
+    return view('admin.create-page');
 });
-Route::delete('del','AdminController@del');
+
 Route::post('sub-menu','AdminController@submenu');
 Route::post('main-menu','AdminController@mainmenu');
 Route::post('admin','AdminController@store');
 Route::delete('admin/{id}','AdminController@destroy');
 Route::get('admin/{id}/edit','AdminController@edit');
+Route::get('admin/{id}/edit_menu','AdminController@edit_menu');
+
 Route::post('admin/{id}','AdminController@update');
+Route::post('admin_edit/{id}','AdminController@updatemenu');
+
 Route::get('admin/sub-menu', function () {
     return view('admin.sub-menu');
 });
-Route::get('admin/main-menu', function () {
-    return view('admin.main-menu');
+Route::get('admin/menu', function () {
+    $cat = \App\Menu::with('children')->where('parent_id','>=',0)->get();
+    return view('admin.menu',compact('cat'));
 });
 Route::get('admin/delete-menu', function () {
     return view('admin.delete-menu');
 });
+Route::delete('admin/delete-menu/{id}','AdminController@del');
+
+Route::delete('admin/submenu_edit','AdminController@editsub');

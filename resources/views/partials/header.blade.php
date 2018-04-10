@@ -7,7 +7,7 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="/">
-										<img alt="ideasowners" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="90" src="{{url('img/logo-ideasowners.png')}}">
+										<img alt="ideasowners" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="90" src="{{url('img/services/logo.jpeg')}}">
 									</a>
 								</div>
 							</div>

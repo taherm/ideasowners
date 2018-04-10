@@ -9,6 +9,8 @@
 				<div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 500, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500]}">
 					<ul>
 					@foreach($slider as $slide)
+				
+					@if(strpos($slide->image, "youtube.com") == false)
 						<li data-transition="fade">
 
 							<img src="{{$slide->image }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
@@ -17,8 +19,31 @@
 
 							
 						</li>
+					@else
+						<li>
+						<div class="tp-caption sft customout"
+			data-x="center" data-hoffset="134"
+			data-y="center" data-voffset="-6"
+			data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+			data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+			data-speed="600"
+			data-start="1000"
+			data-easing="Power4.easeOut"
+			data-endspeed="500"
+			data-endeasing="Power4.easeOut"
+			data-autoplay="true"
+			data-autoplayonlyfirsttime="false"
+			data-nextslideatend="true"
+		>
+			<iframe src='{{$slide->image}}' width='640' height='360'
+			           style='width:640px;height:360px;'>
+			</iframe>
+			
+		</div>
+
+						</li>
+						@endif
 						@endforeach  
-						
 					</ul>
 				</div>
 			</div>
@@ -75,7 +100,7 @@
 
 <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
 	<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-		<div class="col-lg-1-5 isotope-item brands">
+		<div class="col-lg-4 isotope-item brands">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -90,7 +115,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item medias">
+		<div class="col-lg-4 isotope-item medias">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -105,7 +130,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item logos">
+		<div class="col-lg-4 isotope-item logos">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -120,7 +145,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item brands">
+		<div class="col-lg-4 isotope-item brands">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -135,7 +160,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item logos">
+		<div class="col-lg-4 isotope-item logos">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -150,7 +175,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item brands">
+		<div class="col-lg-4 isotope-item brands">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -165,7 +190,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item websites">
+		<div class="col-lg-4 isotope-item websites">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -180,7 +205,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item medias">
+		<div class="col-lg-4 isotope-item medias">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -195,7 +220,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item logos">
+		<div class="col-lg-4 isotope-item logos">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -210,7 +235,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-1-5 isotope-item websites">
+		<div class="col-lg-4 isotope-item websites">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
@@ -229,6 +254,28 @@
 </div>
 
 </div>
+
+
+<br>
+
+
+
+				<div class="container">
+					
+							<h2 class="text-center">
+								<strong>Instagram</strong>
+							</h2>
+							<div id="instafeed" style="display: flex; flex-Direction: row;"></div>
+						
+							
+					
+				</div>
+
+
+
+
+
+
 
 	@endsection
 		

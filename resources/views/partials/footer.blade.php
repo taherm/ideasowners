@@ -1,26 +1,9 @@
 <footer class="short" id="footer">
 			<div class="container">
-				<div class="row justify-content-between">
-					<div class="col-lg-8">
-						<h4 class="heading-primary">About Us</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus,
-							et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis. Class
-							aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...
-							<a href="#" class="btn-flat btn-xs">View More
-								<i class="fa fa-arrow-right"></i>
-							</a>
-						</p>
-						<hr class="light">
-					</div>
-					<div class="col-lg-3">
-						<h5 class="mb-2">Contact Us</h5>
-						<span class="phone">(+965)94978803</span>
-						<ul class="list list-icons list-icons-sm">
-							<li>
-								<i class="fa fa-envelope"></i>
-								<a href="mailto:okler@okler.net">info@ideasowners.net</a>
-							</li>
-						</ul>
+				<div class="row justify-content-between pull-right">
+					
+					<div class=col-lg-3" >
+					
 						<ul class="social-icons">
 						<li class="social-icons-instagram">
 								<a href="https://www.instagram.com/ideasowners/" target="_blank" title="Instagram">
@@ -49,13 +32,9 @@
 			<div class="footer-copyright">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-1">
-							<a href="/" class="logo">
-								<img alt="Ideas Owners" class="img-fluid" src="{{url('img/logo-footer.png')}}">
-							</a>
-						</div>
-						<div class="col-lg-11">
-							<p>© Copyright 2017. All Rights Reserved.</p>
+						
+						<div class="col-lg-8">
+							<p>© Copyright 2018. All Rights Reserved.</p>
 						</div>
 					</div>
 				</div>

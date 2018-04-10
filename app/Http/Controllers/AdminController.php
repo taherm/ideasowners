@@ -7,13 +7,23 @@ use App\Service;
 use App\Slider;
 use App\Menu;
 
+
 class AdminController extends Controller
 {
+    
+
     public function index()
     {
-        $ser=Service::all();
+       $ser=Service::all();
         return view('admin.index',compact('ser'));
     }
+
+    public function show()
+    {
+       $ser=Service::all();
+        return view('admin.pages',compact('ser'));
+    }
+
 
     public function delete_slider()
     {
@@ -26,12 +36,30 @@ class AdminController extends Controller
     {
         $slide=new Slider;
         $temp=request('image');
-        $filename='img/slider/'.$temp;
-        $slide->image=$filename;
-       
-        $slide->save();
-        return redirect('/admin');
+        if(!(fnmatch('* http://www.youtube.com/* *',$temp)))		
+        {
+            $slide->image=$temp;
+            $slide->save(); 
+        }
+else{
+    $filename='img/slider/'.$temp;
+    $slide->image=$filename;
+   
+    $slide->save();
+}
+        
+        return redirect('/admin/add-slider');
     }
+
+
+    public function edit_menu($id)
+    {
+        $serv=Menu::find($id);
+        return view('admin.menu_edit',compact('serv'));
+    }
+    
+
+
 
 
     public function submenu()
@@ -51,6 +79,9 @@ class AdminController extends Controller
          return redirect('/admin');
     }
 
+
+
+    
     public function mainmenu()
     {
        
@@ -75,13 +106,6 @@ class AdminController extends Controller
 
     public function update($id)
     {
-        //dd('stopo here');
-        $this->validate(request(),[
-        'title'=>'required',
-        'description'=>'required',
-        'image'=>'required'
-         ]);
-        
         $serv=Service::find($id);
         $fn=$serv->title;
         $serv->title=request('title');
@@ -96,6 +120,11 @@ class AdminController extends Controller
         $menu=Menu::where('title',"=",$fn)->first();
         $menu->title=request('title');
         $menu->url="services/menu/".$serv->title;
+        if(request('menu')!='None')
+{
+    $menu->parent_id=Menu::where('title',request('menu'))->first()->id;
+
+}
 $menu->save();
         $serv->save();
         //File::move("C://xampp/htdocs/pim/resources/views/services/".$fn.'.blade.php',"C://xampp/htdocs/pim/resources/views/services/".request('title').'.blade.php');
@@ -104,20 +133,34 @@ $menu->save();
     }
 
 
-    public function store()
+    public function updatemenu($id)
     {
-    
-    $this->validate(request(),[
-       'title'=>'required',
-       'description'=>'required'
-       
-        ]);
-   
-     // $temp= File::get("C://xampp/htdocs/pim/resources/views/layouts/new-service-layout.blade.php");
-       
+            $serv=Menu::find($id);
+            $fn=$serv->title;
+            $serv->title=request('title');
+            
+            $menu=Menu::where('title',"=",$fn)->first();
+            $menu->title=request('title');
+            $menu->url="menu/".$serv->title;
+            if(request('menu')!='None')
+            {
+                $menu->parent_id=Menu::where('title',request('menu'))->first()->id;
+            
+            }
+    $menu->save();
+            //File::move("C://xampp/htdocs/pim/resources/views/services/".$fn.'.blade.php',"C://xampp/htdocs/pim/resources/views/services/".request('title').'.blade.php');
+            //dd(request()->all());
+            return redirect('/admin');
+    }
 
     
-       // File::put("C://xampp/htdocs/pim/resources/views/services/".request('title').'.blade.php',$temp);
+
+
+
+
+
+    public function store()
+    {
         $serv=new Service;
         $serv->title=request('title');
         $serv->description=request('description');
@@ -164,13 +207,19 @@ $menu->save();
         return redirect('/admin');
     }
 
-    public function del()
+    public function del($id)
     {
-       $menu= Menu::where('title',request('submenu'))->first();
+       $menu= Menu::find($id)->delete();;
        //$temp=$menu->title;
       // File::delete("C://xampp/htdocs/pim/resources/views/services/".$temp.'.blade.php');
-        
-       Menu::where('title',request('submenu'))->delete();
+ 
+      //Menu::where('title',request('submenu'))->delete();
     return redirect('/admin');
     }
+
+    
+
+
+
+
 }

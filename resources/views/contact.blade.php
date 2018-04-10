@@ -72,9 +72,7 @@
     </div>
     <div class="col-lg-6">
 
-        <h4 class="heading-primary mt-4">Get in <strong>Touch</strong></h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+        
         <hr>
 
         <h4 class="heading-primary">The <strong>Office</strong></h4>
@@ -95,6 +93,7 @@
             <li><i class="fa fa-clock-o"></i> Friday - Closed</li>
         </ul>
 
+       
     </div>
 
 <div class="map">
