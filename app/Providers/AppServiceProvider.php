@@ -57,7 +57,12 @@ class AppServiceProvider extends ServiceProvider
             $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
             $view->with('cate', $categories);
         });
-    
+        
+        view()->composer('admin.create-portfolio', function($view)
+        {
+            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
+            $view->with('cate', $categories);
+        });
     
     
         view()->composer('menu.delete', function($view)
@@ -72,6 +77,11 @@ class AppServiceProvider extends ServiceProvider
             $view->with('cate', $categories);
         });
 
+        view()->composer('admin.edit-portfolio', function($view)
+        {
+            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
+            $view->with('cate', $categories);
+        });
 
 
         view()->composer('admin.delete-menu', function($view)

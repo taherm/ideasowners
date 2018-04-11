@@ -1,6 +1,7 @@
 <?php
 use App\Service;
 use App\Slider;
+use App\Portfolio;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,8 +16,9 @@ use App\Slider;
 Route::get('/', function () {
     $slider=Slider::all();
     $ser=Service::all();
+    $portfolio=Portfolio::all();
 
-    return view('index',compact('slider','ser'));
+    return view('index',compact('slider','ser','portfolio'));
 });
 
 Route::get('/contact', function () {
@@ -24,7 +26,9 @@ Route::get('/contact', function () {
 });
 
 Route::get('/portfolio', function () {
-    return view('portfolio');
+    $portfolio=Portfolio::all();
+
+    return view('portfolio',compact('portfolio'));
 });
 
 Route::get('/about', function () {
@@ -38,6 +42,9 @@ Route::get('/services/web-development', function () {
 Route::post('/contact-mail','ContactController@send');
 Route::get('services/menu/{url}','ServicesController@show');
 Route::get('services/{id}','ServicesController@find');
+
+Route::get('portfolio/menu/{url}','PortfoliosController@show');
+Route::get('portfolio/{id}','PortfoliosController@find');
 Route::get('menu/{url}','MenuController@show');
 
 
@@ -51,6 +58,10 @@ Route::get('admin/add-slider',function () {
     return view('admin.add-slider');
 });
 Route::get('admin/page','AdminController@show');
+Route::get('admin/create-portfolio',function () {
+    return view('admin.create-portfolio');
+});
+Route::get('admin/portfolio','AdminController@portfolio');
 Route::get('admin/create-page', function () {
     return view('admin.create-page');
 });
@@ -61,7 +72,14 @@ Route::post('admin','AdminController@store');
 Route::delete('admin/{id}','AdminController@destroy');
 Route::get('admin/{id}/edit','AdminController@edit');
 Route::get('admin/{id}/edit_menu','AdminController@edit_menu');
+Route::post('admin/add-portfolio','AdminController@add_portfolio');
+Route::post('admin/portfolio-edit/{id}','AdminController@edit_portfolio');
 
+Route::delete('admin/delete-portfolio/{id}','AdminController@delete_portfolio');
+Route::get('admin/edit-portfolio/{id}',function ($id) {
+    $serv=Portfolio::find($id);
+    return view('admin.edit-portfolio',compact('serv'));
+});
 Route::post('admin/{id}','AdminController@update');
 Route::post('admin_edit/{id}','AdminController@updatemenu');
 
@@ -69,7 +87,7 @@ Route::get('admin/sub-menu', function () {
     return view('admin.sub-menu');
 });
 Route::get('admin/menu', function () {
-    $cat = \App\Menu::with('children')->where('parent_id','>=',0)->get();
+    $cat = \App\Menu::with('children')->where('parent_id','=',0)->get();
     return view('admin.menu',compact('cat'));
 });
 Route::get('admin/delete-menu', function () {

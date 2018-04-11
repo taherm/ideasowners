@@ -54,12 +54,12 @@
 									<div class="header-nav justify-content-start">
 										<div class="header-nav-main header-nav-main-light header-nav-main-effect-1 header-nav-main-sub-effect-1">
 											<nav class="collapse">
-												<ul class="nav nav-pills" id="mainNav">
+												<ul class="nav nav-pills" id="mainNav" >
 												@foreach($cat as $item)
 			                @if($item->children->count() > 0)
 													
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" style="cursor:default">
+														<a class="dropdown-item dropdown-toggle" style="cursor:default" href="{{$item->url}}" >
 														{{$item->title}}
 														</a>
 														<ul class="dropdown-menu">
@@ -73,7 +73,7 @@
 													</li>
 													@else
 													<li class="">
-														<a class="nav-link" href="{{ url($item->url) }}">
+														<a class="nav-link" href="{{$item->url}}">
 														{{$item->title}}
 														</a>
 													

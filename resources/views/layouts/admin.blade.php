@@ -53,6 +53,13 @@
                         </a>
                     </li>
                     <li>
+                        <a href="/admin/portfolio" class=" hvr-bounce-to-right">
+                            <i class="fa fa-clone nav_icon" ></i>
+                            <span class="nav-label black">Portfolio</span>
+                        </a>
+                    </li>
+                    
+                    <li>
                         <a href="/admin/add-slider" class=" hvr-bounce-to-right">
                             <i class="fa fa-snowflake-o nav_icon" ></i>
                             <span class="nav-label black">Add Slider</span>

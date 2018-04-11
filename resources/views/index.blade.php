@@ -100,156 +100,23 @@
 
 <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
 	<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-		<div class="col-lg-4 isotope-item brands">
+	@foreach($portfolio as $item)
+		<div class="col-lg-4 isotope-item {{$item->tag}}">
 			<div class="portfolio-item">
 				<a href="portfolio-single-small-slider.html">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
 						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/web-1.jpeg" class="img-fluid" alt="">
+							<img src="{{$item->image}}" class="img-fluid" alt="">
 							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Presentation</span>
-								<span class="thumb-info-type">Brand</span>
+								<span class="thumb-info-inner text-1 line-height-xs pt-1">{{$item->title}}</span>
+								<span class="thumb-info-type">{{$item->tag}}</span>
 							</span>
 						</span>
 					</span>
 				</a>
 			</div>
 		</div>
-		<div class="col-lg-4 isotope-item medias">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/web-2.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Porto Watch</span>
-								<span class="thumb-info-type">Media</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 isotope-item logos">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/web-4.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Identity</span>
-								<span class="thumb-info-type">Logo</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 isotope-item brands">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/web-5.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Watch Mockup</span>
-								<span class="thumb-info-type">Brand</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 isotope-item logos">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/web-6.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Three Bottles</span>
-								<span class="thumb-info-type">Logo</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 isotope-item brands">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/logo-1.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Company T-Shirt</span>
-								<span class="thumb-info-type">Brand</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 isotope-item websites">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/logo-4.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Mobile Mockup</span>
-								<span class="thumb-info-type">Website</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 isotope-item medias">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/logo-3.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Porto Label</span>
-								<span class="thumb-info-type">Media</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 isotope-item logos">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/logo-5.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Business Folders</span>
-								<span class="thumb-info-type">Logo</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 isotope-item websites">
-			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
-					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
-						<span class="thumb-info-wrapper">
-							<img src="img/portfolio/app-1.jpeg" class="img-fluid" alt="">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner text-1 line-height-xs pt-1">Tablet Screen</span>
-								<span class="thumb-info-type">Website</span>
-							</span>
-						</span>
-					</span>
-				</a>
-			</div>
-		</div>
+		@endforeach
 	</div>
 </div>
 
