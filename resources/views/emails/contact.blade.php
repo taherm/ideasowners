@@ -8,7 +8,8 @@
 </head>
 <body>
 <h1>IdeasOwners Contact Us Mail</h1>
-    <p>From: {{$data['name']}}</p>
+    <p>From: {{$data['email']}}</p>
+    <p>Name: {{$data['name']}}</p>
     <p>Subject: {{$data['subject']}}</p>
     <p>Message: {{$data['message']}}</p>
 </body>

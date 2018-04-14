@@ -103,7 +103,7 @@
 	@foreach($portfolio as $item)
 		<div class="col-lg-4 isotope-item {{$item->tag}}">
 			<div class="portfolio-item">
-				<a href="portfolio-single-small-slider.html">
+				<a href="{{ url('portfolio/'.$item->id) }}">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
 						<span class="thumb-info-wrapper">
 							<img src="{{$item->image}}" class="img-fluid" alt="">

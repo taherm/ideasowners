@@ -11,17 +11,19 @@ class ContactController extends Controller
     {
    
         $data = [
+            'email'=>request('email'),
             'name' => request('name'),
             'subject' => request('subject'),
             'message' => request('message')]; 
 //dd($data['name']);
 
 try {
-    \Mail::to("mukadam.taher@gmail.com")->send(new contact($data));   
+    \Mail::to($data['email'])->send(new contact($data));   
 
 } catch(\Exception $e) {
     dd($e->getMessage());
 }
+return redirect('/contact');
         }
    
 }
