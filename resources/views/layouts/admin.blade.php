@@ -29,6 +29,15 @@
         </button>
         <h1> <a class="navbar-brand" href="{{url('/admin')}}" target="_blank">IdeasOwners</a></h1>
     </div>
+    <a href="{{ route('logout') }}" class="btn pull-right"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
     <div class=" border-bottom">
 
         <div class="clearfix"></div>
