@@ -30,13 +30,13 @@
                 <tbody>
                 @foreach($ser as $s)
                                     <tr class="gradeU">
-                        <td> <a href="{{$s->id}}">{{$s->id}}</a> </td>
-                        <td> <a href="{{$s->title}}">{{$s->title}}</a> </td>
+                        <td>{{$s->id}} </td>
+                        <td>{{$s->title}}</td>
                         
                         <td>{{$s->created_at}}</td>
                         
-                        <td> <a class="btn btn-default" href="{{ url('admin/'.$s->id.'/edit') }}">Edit</a> </td>
-                     <td> <form method="POST" action="/admin/{{$s->id}}">
+                        <td> <a class="btn btn-default" href="{{ url('admin/'.$s->id.'/edit')}}">Edit</a> </td>
+                     <td> <form method="POST" action="{{url('/admin/'.$s->id)}}">
 										{{ csrf_field() }}
 										<input name="_method" value="delete" type="hidden">
 										<button class="btn btn-danger" type="submit">Delete</button>

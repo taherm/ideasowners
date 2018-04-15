@@ -19,7 +19,7 @@
 							</p>
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="{{url('img/portfolio/web.jpg')}}" alt="">
+							<img class="img-fluid mt-5" src="{{asset('img/portfolio/web.jpg')}}" alt="">
 						</div>
 					</div>
                     </div>

@@ -4,7 +4,7 @@
         <div class="content-top-1">
             
     <div class="mTop10">
-    <form method="POST" action="/admin/del-slider">
+    <form method="POST" action="{{url('/admin/del-slider')}}">
        {{ csrf_field() }}
        <input name="_method" value="delete" type="hidden">
       

@@ -6,12 +6,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
 
-            <link href="/ad/css/bootstrap.css" rel="stylesheet">
-<link href="/ad/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
-<link href="/ad/fonts/fontello/css/fontello.css" rel="stylesheet">
-<link href="/ad/plugins/select2/select2.min.css" rel="stylesheet">
-        <link href="/ad/css/style.css" rel='stylesheet' type='text/css' />
-        <link href="/ad/css/custom.css" rel="stylesheet">
+            <link href="{{asset('ad/css/bootstrap.css')}}" rel="stylesheet">
+<link href="{{asset('ad/fonts/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
+<link href="{{asset('ad/fonts/fontello/css/fontello.css')}}" rel="stylesheet">
+<link href="{{asset('ad/plugins/select2/select2.min.css')}}" rel="stylesheet">
+        <link href="{{asset('ad/css/style.css')}}" rel='stylesheet' type='text/css' />
+        <link href="{{asset('ad/css/custom.css')}}" rel="stylesheet">
         
   
 </head>
@@ -27,7 +27,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <h1> <a class="navbar-brand" href="/admin" target="_blank">IdeasOwners</a></h1>
+        <h1> <a class="navbar-brand" href="{{url('/admin')}}" target="_blank">IdeasOwners</a></h1>
     </div>
     <div class=" border-bottom">
 
@@ -38,35 +38,35 @@
                 <ul class="nav" id="side-menu">
 
                     <li>
-                        <a href="/admin" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon " ></i><span class="nav-label black">Dashboards</span> </a>
+                        <a href="{{url('/admin')}}" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon " ></i><span class="nav-label black">Dashboards</span> </a>
                     </li>
                     <li>
-                        <a href="/admin/menu" class=" hvr-bounce-to-right">
+                        <a href="{{url('admin/menu')}}" class=" hvr-bounce-to-right">
                             <i class="fa fa-sliders nav_icon " ></i>
                             <span class="nav-label black">Menu</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/admin/page" class=" hvr-bounce-to-right">
+                        <a href="{{url('admin/page')}}" class=" hvr-bounce-to-right">
                             <i class="fa fa-clone nav_icon" ></i>
                             <span class="nav-label black">Pages</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/admin/portfolio" class=" hvr-bounce-to-right">
+                        <a href="{{url('admin/portfolio')}}" class=" hvr-bounce-to-right">
                             <i class="fa fa-clone nav_icon" ></i>
                             <span class="nav-label black">Portfolio</span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="/admin/add-slider" class=" hvr-bounce-to-right">
+                        <a href="{{url('admin/add-slider')}}" class=" hvr-bounce-to-right">
                             <i class="fa fa-snowflake-o nav_icon" ></i>
                             <span class="nav-label black">Add Slider</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/admin/delete-slider" class=" hvr-bounce-to-right">
+                        <a href="{{url('admin/delete-slider')}}" class=" hvr-bounce-to-right">
                             <i class="fa fa-snowflake-o nav_icon" ></i>
                             <span class="nav-label black">Delete Slider</span>
                         </a>
@@ -82,7 +82,7 @@
         <div class="content-main">
                             <div class="banner">
     <h2>
-        <a href="/admin">Home</a>
+        <a href="{{url('admin')}}">Home</a>
         <i class="fa fa-angle-right"></i>
         <span>Dashboard</span>
     </h2>
@@ -106,47 +106,47 @@
 
 
 
-<script type="text/javascript" src="/ad/plugins/jquery.min.js"></script>
-<script type="text/javascript" src="/ad/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('ad/js/bootstrap.min.js')}}"></script>
 
 <!-- Modernizr javascript -->
-<script type="text/javascript" src="/ad/plugins/modernizr.js"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/modernizr.js')}}"></script>
 
 <!-- jQuery REVOLUTION Slider  -->
-<script type="text/javascript" src="/ad/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="/ad/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script>
 
 <!-- Isotope javascript -->
 
 <!-- Owl carousel javascript -->
-<script type="text/javascript" src="/ad/plugins/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/owl-carousel/owl.carousel.js')}}"></script>
 
 <!-- Magnific Popup javascript -->
-<script type="text/javascript" src="/ad/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
 
 <!-- Appear javascript -->
-<script type="text/javascript" src="/ad/plugins/jquery.appear.js"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/jquery.appear.js')}}"></script>
 
 <!-- Parallax javascript -->
-<script src="/ad/plugins/jquery.parallax-1.1.3.js"></script>
+<script src="{{asset('ad/plugins/jquery.parallax-1.1.3.js')}}"></script>
 
 <!-- Contact form -->
-<script src="/ad/plugins/jquery.validate.js"></script>
+<script src="{{asset('ad/plugins/jquery.validate.js')}}"></script>
 
 <!-- SmoothScroll javascript -->
-<script type="text/javascript" src="/ad/plugins/jquery.browser.js"></script>
-<script type="text/javascript" src="/ad/plugins/SmoothScroll.js"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/jquery.browser.js')}}"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/SmoothScroll.js')}}"></script>
 
-<script src="/ad/plugins/select2/select2.full.min.js"></script>
-<script src="/ad/plugins/tinymce/tinymce.jquery.min.js"></script>
-<script type="text/javascript" src="/ad/plugins/tinymce/tinymce.min.js"></script>
+<script src="{{asset('ad/plugins/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('ad/plugins/tinymce/tinymce.jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('ad/plugins/tinymce/tinymce.min.js')}}"></script>
 <script src="{{url('http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js')}}"></script>
 
 <!-- Initialization of Plugins -->
-<script type="text/javascript" src="/ad/js/template.js"></script>
+<script type="text/javascript" src="{{asset('ad/js/template.js')}}"></script>
 
 <!-- Custom Scripts -->
-<script type="text/javascript" src="/ad/js/custom.js"></script>
+<script type="text/javascript" src="{{asset('ad/js/custom.js')}}"></script>
 <!-- Color Switcher (Remove these lines) -->
 
 

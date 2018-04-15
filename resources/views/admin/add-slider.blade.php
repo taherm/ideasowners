@@ -4,7 +4,7 @@
         <div class="content-top-1">
             
     <div class="mTop10">
-        <form method="POST" action="/admin/slider" >
+        <form method="POST" action="{{url('/admin/slider')}}" enctype="multipart/form-data">
             {{ csrf_field() }}
 
         <div class="form-group">
@@ -19,12 +19,12 @@
         <br>
         <div class="form-group">
       <label for="exampleInputEmail1">Enter Youtube Title</label>
-      <input type="text" class="form-control" name="image"  >
+      <input type="text" class="form-control" name="url">
     </div>
 
         
         <div class="form-group">
-            <input class="btn btn-primary form-control" type="submit" value="Save">
+            <input class="btn btn-primary form-control" type="submit">
         </div>
 
         </form>

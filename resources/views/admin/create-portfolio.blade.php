@@ -4,7 +4,7 @@
         <div class="content-top-1">
             
     <div class="mTop10">
-    <form method="POST" action="/admin/add-portfolio">
+    <form method="POST" action="{{url('/admin/add-portfolio')}}"  enctype="multipart/form-data">
                 {{ csrf_field() }}
     <div class="form-group">
       <label for="exampleInputEmail1">Title</label>
@@ -24,8 +24,8 @@
                 <option value="None">None</option>
                 <option value="logos">Logos</option>
                 <option value="websites">Websites</option>
-                <option value="videos">Videos</option>
-                <option value="apps">Apps</option>
+                <option value="video">Videos</option>
+                <option value="app">Apps</option>
                 <option value="graphic">Graphic Design</option>
             </select></div>
     <b>Add to Menu</b>

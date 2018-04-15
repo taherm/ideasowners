@@ -39,7 +39,7 @@
 
         <h2 class="mb-3 mt-2"><strong>Contact</strong> Us</h2>
 
-        <form action="/contact-mail" method="POST">
+        <form action="{{url('/contact-mail')}}" method="POST">
         {{ csrf_field() }}
             <div class="form-row">
                 <div class="form-group col-lg-6">

@@ -4,7 +4,7 @@
         <div class="content-top-1">
                 <div>
         <div class="col-md-10">
-            <h1>Porfolio</h1>
+            <h1>Portfolio</h1>
         </div>
         <div class="col-md-2">
             <a class="btn btn-success btn-lg" role="button" href="/admin/create-portfolio"> Add Portfolio</a>
@@ -30,13 +30,13 @@
                 <tbody>
                 @foreach($ser as $s)
                                     <tr class="gradeU">
-                        <td> <a href="{{$s->id}}">{{$s->id}}</a> </td>
-                        <td> <a href="{{$s->title}}">{{$s->title}}</a> </td>
+                        <td>{{$s->id}} </td>
+                        <td>{{$s->title}} </td>
                         
                         <td>{{$s->tag}}</td>
                         
                         <td> <a class="btn btn-default" href="{{ url('admin/edit-portfolio/'.$s->id) }}">Edit</a> </td>
-                     <td> <form method="POST" action="/admin/delete-portfolio/{{$s->id}}">
+                     <td> <form method="POST" action="{{url('/admin/delete-portfolio/'.$s->id)}}">
 										{{ csrf_field() }}
 										<input name="_method" value="delete" type="hidden">
 										<button class="btn btn-danger" type="submit">Delete</button>

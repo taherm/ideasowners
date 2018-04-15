@@ -16,17 +16,17 @@
             </thead>
             @foreach($cat as $item)
                             <tr>
-                    <td><a href="http://drwejdan.ideasowners.net/admin/categories/9">{{ $item->title }}</a></td>
+                    <td>{{ $item->title }}</td>
                     
                     
                     <td class="text-center">
-                        <a class='btn btn-info btn-xs' href="{{ url('admin/'.$item->id.'/edit_menu') }}">
+                        <a class='btn btn-info btn-xs' href="{{ url('admin/'.$item->id.'/edit_menu')}}">
                             <span class="glyphicon glyphicon-edit"></span>
                             Edit
                         </a>
                         </td>
 
-                     <td>   <form method="POST" action="/admin/delete-menu/{{$item->id}}">
+                     <td>   <form method="POST" action="{{url('/admin/delete-menu/'.$item->id)}}">
 										{{ csrf_field() }}
 										<input name="_method" value="delete" type="hidden">
 										<button class="btn btn-danger" type="submit">Delete</button>
@@ -51,7 +51,7 @@
         <h1>Add Menu</h1>
         <hr>
 
-        <form method="POST" action="/main-menu">
+        <form method="POST" action="{{url('/main-menu')}}">
         {{ csrf_field() }}
         <div class="form-group">
     <label for="companyName">Name</label>
@@ -71,7 +71,7 @@
         <h1>Add SubMenu</h1>
         <hr>
 
-        <form method="POST" action="/sub-menu">
+        <form method="POST" action="{{url('/sub-menu')}}">
             {{ csrf_field() }}
         <div class="form-group">
     <label for="companyName">Name</label>

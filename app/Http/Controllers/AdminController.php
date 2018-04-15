@@ -7,12 +7,13 @@ use App\Service;
 use App\Slider;
 use App\Menu;
 use App\Portfolio;
+use Intervention\Image\Facades\Image;
 
 
 class AdminController extends Controller
 {
     
-
+    const UPLOAD_PATH =  '/uploads/';
     public function index()
     {
        $ser=Service::all();
@@ -39,22 +40,17 @@ class AdminController extends Controller
 
         return redirect('/admin/delete-slider');
     }
-    public function add_slider()
+
+    public function add_slider(Request $request)
     {
         $slide=new Slider;
-        $temp=request('image');
-        if(!(fnmatch('* http://www.youtube.com/* *',$temp)))		
-        {
-            $slide->image=$temp;
-            $slide->save(); 
-        }
-else{
-    $filename='img/slider/'.$temp;
-    $slide->image=$filename;
-   
-    $slide->save();
-}
-        
+        $image=request()->image;
+        $imageName =$image->getClientOriginalName();
+        $savePath =public_path() . self::UPLOAD_PATH.$imageName;
+        Image::make($image)->save($savePath, 100);
+        $fullImagePath = app()->make('url')->to(self::UPLOAD_PATH.$imageName);
+        $slide->image=$fullImagePath;
+        $slide->save(); 
         return redirect('/admin/add-slider');
     }
 
@@ -117,12 +113,21 @@ else{
         $fn=$serv->title;
         $serv->title=request('title');
         $serv->description=request('description');
-        $temp=request('image');
-        $filename='img/services/'.$temp;
-        $serv->image=$filename;
-        $temp2=request('icon');
-        $filename2='img/services/'.$temp2;
-        $serv->icon=$filename2;
+       
+        $image=request()->image;
+        $imageName =$image->getClientOriginalName();
+        $savePath =public_path() . self::UPLOAD_PATH.$imageName;
+        Image::make($image)->save($savePath, 100);
+        $fullImagePath = app()->make('url')->to(self::UPLOAD_PATH.$imageName);
+        $serv->image=$fullImagePath;
+     
+        $icon=request()->icon;
+        $iconName =$icon->getClientOriginalName();
+        $savePath =public_path() . self::UPLOAD_PATH.$iconName;
+        Image::make($icon)->save($savePath, 100);
+        $fullIconPath = app()->make('url')->to(self::UPLOAD_PATH.$iconName);
+        $serv->icon=$fullIconPath;
+     
         
         $menu=Menu::where('title',"=",$fn)->first();
         $menu->title=request('title');
@@ -148,9 +153,15 @@ $menu->save();
         $fn=$portfolio->title;
         $portfolio->title=request('title');
         $portfolio->description=request('description');
-        $temp=request('image');
-        $filename='img/porfolio/'.$temp;
-        $portfolio->image=$filename;
+       
+        $image=request()->image;
+        $imageName =$image->getClientOriginalName();
+        $savePath =public_path() . self::UPLOAD_PATH.$imageName;
+        Image::make($image)->save($savePath, 100);
+        $fullImagePath = app()->make('url')->to(self::UPLOAD_PATH.$imageName);
+        $portfolio->image=$fullImagePath;
+     
+
         $portfolio->tag=request('tag');
         
         $menu=Menu::where('title',"=",$fn)->first();
@@ -211,12 +222,21 @@ $menu->save();
         $serv=new Service;
         $serv->title=request('title');
         $serv->description=request('description');
-        $temp=request('image');
-        $filename='img/services/'.$temp;
-        $serv->image=$filename;
-        $temp2=request('icon');
-        $filename2='img/services/'.$temp2;
-        $serv->icon=$filename2;
+       
+        $image=request()->image;
+        $imageName =$image->getClientOriginalName();
+        $savePath =public_path() . self::UPLOAD_PATH.$imageName;
+        Image::make($image)->save($savePath, 100);
+        $fullImagePath = app()->make('url')->to(self::UPLOAD_PATH.$imageName);
+        $serv->image=$fullImagePath;
+     
+        $icon=request()->icon;
+        $iconName =$icon->getClientOriginalName();
+        $savePath =public_path() . self::UPLOAD_PATH.$iconName;
+        Image::make($icon)->save($savePath, 100);
+        $fullIconPath = app()->make('url')->to(self::UPLOAD_PATH.$iconName);
+        $serv->icon=$fullIconPath;
+
         $serv->save();
     
     //File::put("C://xampp/htdocs/pim/resources/views/services/".request('title').'.blade.php','John Doe is a good boy');
@@ -252,9 +272,14 @@ $menu->save();
         $portfolio=new Portfolio();
         $portfolio->title=request('title');
         $portfolio->description=request('description');
-        $temp=request('image');
-        $filename='img/portfolio/'.$temp;
-        $portfolio->image=$filename;
+       
+        $image=request()->image;
+        $imageName =$image->getClientOriginalName();
+        $savePath =public_path() . self::UPLOAD_PATH.$imageName;
+        Image::make($image)->save($savePath, 100);
+        $fullImagePath = app()->make('url')->to(self::UPLOAD_PATH.$imageName);
+        $portfolio->image=$fullImagePath;
+     
         
         $portfolio->tag=request('tag');
         $portfolio->save();

@@ -13,7 +13,7 @@
     <div>
         <h1>Edit Menu</h1>
         <hr>
-        <form method="POST" action="/admin_edit/{{$serv->id}}">
+        <form method="POST" action="{{url('/admin_edit/{{$serv->id}}')}}">
         {{ csrf_field() }}
         <div class="form-group">
     <label for="companyName">Title</label>
