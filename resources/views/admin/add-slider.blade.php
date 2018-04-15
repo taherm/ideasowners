@@ -15,12 +15,7 @@
                 <input id="image" type="file" name="image" class="cover form-control">
             </span>
         </div>
-        OR
-        <br>
-        <div class="form-group">
-      <label for="exampleInputEmail1">Enter Youtube Title</label>
-      <input type="text" class="form-control" name="url">
-    </div>
+       
 
         
         <div class="form-group">
