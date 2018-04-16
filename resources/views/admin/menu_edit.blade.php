@@ -13,22 +13,13 @@
     <div>
         <h1>Edit Menu</h1>
         <hr>
-        <form method="POST" action="{{url('/admin_edit/{{$serv->id}}')}}">
+        <form method="POST" action="{{url('/admin_edit/'.$serv->id)}}">
         {{ csrf_field() }}
         <div class="form-group">
     <label for="companyName">Title</label>
     <input class="form-control" placeholder="Name (English)" name="title" type="text">
 </div>
-<b>Add to Submenu</b>
-          <select name="menu" class="form-control">
-                <option value="None">None</option>
-                @foreach($cate as $item)
-               
-                    <option value="{{$item->title}}">{{ $item->title }}</option>
-                   
-                    @endforeach
-               
-            </select>
+
 
 
 

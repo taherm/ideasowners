@@ -74,7 +74,7 @@ class AdminController extends Controller
         $menu->parent_id=Menu::where('title',request('submenu'))->first()->id;
         
          
-         $menu->url="menu/".request('title');
+         $menu->url="";
          $menu->save();
         //$temp= File::get("C://xampp/htdocs/pim/resources/views/layouts/new-service-layout.blade.php");
         //File::put("C://xampp/htdocs/pim/resources/views/services/".request('title').'.blade.php',$temp);
@@ -87,17 +87,12 @@ class AdminController extends Controller
     
     public function mainmenu()
     {
-       
-         $menu=new Menu;
-         $menu->title=request('title');
-         
+        $menu=new Menu;
+        $menu->title=request('title');
         $menu->parent_id='0';
-        $menu->url="menu/".request('title');
-         $menu->save();
-        //$temp= File::get("C://xampp/htdocs/pim/resources/views/layouts/new-service-layout.blade.php");
-        //File::put("C://xampp/htdocs/pim/resources/views/services/".request('title').'.blade.php',$temp);
-         //dd(request()->all());
-         return redirect('/admin');
+        $menu->url="";
+        $menu->save();
+        return redirect('/admin');
     }
 
 
@@ -187,27 +182,13 @@ $menu->save();
 
     public function updatemenu($id)
     {
-            $serv=Menu::find($id);
-            $fn=$serv->title;
-            if($service=Service::where('title',"=",$fn)->first())
-            {
-             $service->title=request('title');
-             $service->save();
-            }
-
-            $serv->title=request('title');
-            
-            $menu=Menu::where('title',"=",$fn)->first();
+            $temp=Menu::find($id);
+            $menu_name=$temp->title;
+            $menu=Menu::where('title',"=",$menu_name)->first();
             $menu->title=request('title');
-            $menu->url="menu/".$serv->title;
-            if(request('menu')!='None')
-            {
-                $menu->parent_id=Menu::where('title',request('menu'))->first()->id;
-            
-            }
-    $menu->save();
-    //File::move("C://xampp/htdocs/pim/resources/views/services/".$fn.'.blade.php',"C://xampp/htdocs/pim/resources/views/services/".request('title').'.blade.php');
-            //dd(request()->all());
+            $menu->url="";
+            $menu->parent_id="0";
+            $menu->save();
             return redirect('/admin');
     }
 
@@ -244,12 +225,8 @@ $menu->save();
 
     $menu=new Menu;
     $menu->title=request('title');
-    if (isset($_POST['menu'])) {
-        $menu->parent_id='0';
-        // Checkbox is selected
-    } else {
+   
         $menu->parent_id=Menu::where('title',request('submenu'))->first()->id;
-    }
     
    // $menu->url=request('url');
    $menu->url="services/menu/".request('title'); 
@@ -289,12 +266,8 @@ $menu->save();
 
     $menu=new Menu;
     $menu->title=request('title');
-    if (isset($_POST['menu'])) {
-        $menu->parent_id='0';
-        // Checkbox is selected
-    } else {
+    
         $menu->parent_id=Menu::where('title',request('submenu'))->first()->id;
-    }
     
    // $menu->url=request('url');
    $menu->url="portfolio/menu/".request('title'); 

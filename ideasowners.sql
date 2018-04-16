@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2018 at 05:56 PM
+-- Generation Time: Apr 16, 2018 at 08:44 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -55,7 +55,8 @@ INSERT INTO `menus` (`id`, `parent_id`, `title`, `url`, `created_at`, `updated_a
 (45, '3', 'Web Development', 'services/menu/Web Development', '2018-04-15 12:18:02', '2018-04-15 12:18:02'),
 (46, '3', 'Logo Design', 'services/menu/Logo Design', '2018-04-15 12:18:48', '2018-04-15 12:18:48'),
 (47, '3', 'Graphic Designing', 'services/menu/Graphic Designing', '2018-04-15 12:19:47', '2018-04-15 12:19:47'),
-(48, '3', 'Create Your Videos', 'services/menu/Create Your Videos', '2018-04-15 12:20:32', '2018-04-15 12:20:32');
+(48, '3', 'Create Your Videos', 'services/menu/Create Your Videos', '2018-04-15 12:20:32', '2018-04-15 12:20:32'),
+(49, '0', 'Admin', '/admin', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -189,7 +190,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@admin.com', '$2y$10$doWZSN7FVNm33hhaqPR0.evGIXekAZQi6OHuesMeKCQHDu8C036SS', 'Cdf6aFmwPBEgIbAU1VQurXtM7ILC8zsxTvISWgFw6KEDB7mYrjEDBYQcm5yH', '2018-04-15 11:46:24', '2018-04-15 11:46:24');
+(1, 'Admin', 'admin@admin.com', '$2y$10$doWZSN7FVNm33hhaqPR0.evGIXekAZQi6OHuesMeKCQHDu8C036SS', 'h3gycqRw9kNz1CWNKpFyd9Oagg665NmwyOVD7pp4dS5f33qnrmyVzDkrMfLr', '2018-04-15 11:46:24', '2018-04-15 11:46:24');
 
 --
 -- Indexes for dumped tables
@@ -246,7 +247,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `menus`
 --
 ALTER TABLE `menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
@@ -256,17 +257,17 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `portfolios`
 --
 ALTER TABLE `portfolios`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `sliders`
 --
 ALTER TABLE `sliders`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `users`
 --
