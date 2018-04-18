@@ -67,34 +67,6 @@
         </form>
     </div>
 
-<div>
-        <h1>Add SubMenu</h1>
-        <hr>
-
-        <form method="POST" action="{{url('/sub-menu')}}">
-            {{ csrf_field() }}
-        <div class="form-group">
-    <label for="companyName">Name</label>
-    <input class="form-control" placeholder="Name (English)" name="title" type="text">
-</div>
-<b>Submenu Item</b>
-          <select name="submenu" class="form-control">
-                @foreach($cate as $item)
-               
-                    <option value="{{$item->title}}">{{ $item->title }}</option>
-                   
-                    @endforeach
-               
-            </select>
-
-
-<span class="form-g"></span>
-
-<div class="form-group">
-    <button type="submit" class="btn btn-success" style="width: 100%">Save</button>
-</div>
-        </form>
-    </div>
 
 
         </div>

@@ -55,6 +55,18 @@
 										<div class="header-nav-main header-nav-main-light header-nav-main-effect-1 header-nav-main-sub-effect-1">
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav" >
+												<li class="">
+														<a class="nav-link" href="/">
+														Home
+														</a>
+													
+													</li>
+													<li class="">
+														<a class="nav-link" href="/about">
+														About Us
+														</a>
+													
+													</li>
 												@foreach($cat as $item)
 			                @if($item->services->count())
 													
@@ -96,6 +108,12 @@
 													
 													@endif
 				@endforeach
+				<li class="">
+														<a class="nav-link" href="/contact">
+													Contact Us
+														</a>
+													
+													</li>
 												</ul>
 											</nav>
 										</div>

@@ -8,7 +8,8 @@ use App\Slider;
 use App\Menu;
 use App\Portfolio;
 use Intervention\Image\Facades\Image;
-
+use Storage;
+use File;
 
 class AdminController extends Controller
 {
@@ -84,8 +85,6 @@ class AdminController extends Controller
         ]);
         $menu = new Menu;
         $menu->title = request('title');
-        $menu->parent_id = '0';
-        $menu->url = "";
         $menu->save();
         return redirect('/admin');
     }
@@ -99,6 +98,10 @@ class AdminController extends Controller
 
     public function update($id)
     {
+        $this->validate(request(), [
+            'image' => 'required',
+            'icon'=>'required'
+        ]);
         $serv = Service::find($id);
         $fn = $serv->title;
         $serv->title = request('title');
@@ -123,6 +126,10 @@ class AdminController extends Controller
 
     public function edit_portfolio($id)
     {
+        $this->validate(request(), [
+            'image' => 'required',
+            'tag'=>'required'
+        ]);
         $portfolio = Portfolio::find($id);
         $fn = $portfolio->title;
         $portfolio->title = request('title');
@@ -146,8 +153,6 @@ class AdminController extends Controller
         $menu_name = $temp->title;
         $menu = Menu::where('title', "=", $menu_name)->first();
         $menu->title = request('title');
-        $menu->url = "";
-        $menu->parent_id = "0";
         $menu->save();
         return redirect('/admin');
     }
@@ -210,6 +215,8 @@ class AdminController extends Controller
     public function destroy($id)
     {
         $serv = Service::find($id);
+        File::delete('uploads/'.$serv->image);
+        File::delete('uploads/'.$serv->icon);
         $serv->delete();
         return redirect('/admin');
     }
@@ -219,6 +226,7 @@ class AdminController extends Controller
     {
 
         $portfolio = Portfolio::find($id);
+        File::delete('uploads/'.$portfolio->image);
         $portfolio->delete();
         return redirect('/admin');
     }
@@ -227,9 +235,6 @@ class AdminController extends Controller
     public function del($id)
     {
         $menu = Menu::find($id);
-        if ($service = Service::where('title', "=", $menu->title)->first()) {
-            $service->delete();
-        }
         $menu->delete();
         return redirect('/admin');
     }

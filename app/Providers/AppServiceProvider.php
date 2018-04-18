@@ -34,8 +34,7 @@ class AppServiceProvider extends ServiceProvider
     
         view()->composer('admin.menu_edit', function($view)
         {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
-            $categories2 = \App\Menu::with('children')->where('parent_id','>=',0)->get();
+            $categories = \App\Menu::all();
             $view->with('cate', $categories);
         });
     
@@ -76,7 +75,7 @@ class AppServiceProvider extends ServiceProvider
 
         view()->composer('admin.edit-portfolio', function($view)
         {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
+            $categories = \App\Menu::all();
             $view->with('cate', $categories);
         });
 
