@@ -56,16 +56,31 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav" >
 												@foreach($cat as $item)
-			                @if($item->children->count() > 0)
+			                @if($item->services->count())
 													
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" style="cursor:default" href="{{$item->url}}" >
+														<a class="dropdown-item dropdown-toggle" style="cursor:default" href="" >
 														{{$item->title}}
 														</a>
 														<ul class="dropdown-menu">
-														@foreach($item->children as $submenu)
+														@foreach($item->services as $submenu)
 															<li>
-																<a class="dropdown-item" href="{{ url($submenu->url) }}">{{$submenu->title}}</a>
+																<a class="dropdown-item" href="{{url($submenu->getTable().'/'.$submenu->id)}}">{{$submenu->title}}</a>
+															</li>
+															@endforeach
+														</ul>
+														
+													</li>
+													@elseif($item->portfolios->count())
+													
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" style="cursor:default" href="" >
+														{{$item->title}}
+														</a>
+														<ul class="dropdown-menu">
+														@foreach($item->portfolios as $submenu)
+															<li>
+																<a class="dropdown-item" href="{{url($submenu->getTable().'/'.$submenu->id)}}">{{$submenu->title}}</a>
 															</li>
 															@endforeach
 														</ul>
@@ -73,7 +88,7 @@
 													</li>
 													@else
 													<li class="">
-														<a class="nav-link" href="{{url($item->url)}}">
+														<a class="nav-link" href="/">
 														{{$item->title}}
 														</a>
 													

@@ -15,4 +15,15 @@ class Menu extends Model
     {
         return $this->hasMany('App\Menu', 'parent_id');
     }
+
+
+    public function services()
+    {
+        return $this->hasMany('App\Service');
+    }
+
+    public function portfolios()
+    {
+        return $this->hasMany('App\Portfolio');
+    }
 }

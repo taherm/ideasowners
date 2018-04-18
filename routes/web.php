@@ -44,7 +44,7 @@ Route::get('services/menu/{url}','ServicesController@show');
 Route::get('services/{id}','ServicesController@find');
 
 Route::get('portfolio/menu/{url}','PortfoliosController@show');
-Route::get('portfolio/{id}','PortfoliosController@find');
+Route::get('portfolios/{id}','PortfoliosController@find');
 Route::get('menu/{url}','MenuController@show');
 
 
@@ -87,7 +87,7 @@ Route::get('admin/sub-menu', function () {
     return view('admin.sub-menu');
 })->middleware('auth');
 Route::get('admin/menu', function () {
-    $cat = \App\Menu::with('children')->where('parent_id','=',0)->get();
+    $cat = \App\Menu::all();
     return view('admin.menu',compact('cat'));
 })->middleware('auth');
 Route::get('admin/delete-menu', function () {

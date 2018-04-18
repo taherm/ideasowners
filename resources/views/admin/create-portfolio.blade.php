@@ -21,7 +21,6 @@
     <div class="form-group">
       <label for="exampleInputEmail1">Tag</label>
       <select name="tag" class="form-control">
-                <option value="None">None</option>
                 <option value="logos">Logos</option>
                 <option value="websites">Websites</option>
                 <option value="video">Videos</option>
@@ -55,4 +54,5 @@
     </div>
 
                 <div class="clearfix"> </div>
+                @include('layouts.errors')
 @endsection

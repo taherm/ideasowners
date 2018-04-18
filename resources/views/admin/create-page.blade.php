@@ -49,4 +49,5 @@
     </div>
 
                 <div class="clearfix"> </div>
+                @include('layouts.errors')
 @endsection

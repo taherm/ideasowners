@@ -22,17 +22,13 @@ class AppServiceProvider extends ServiceProvider
             $view->with('cat', $categories);
         });
 
-        view()->composer('layouts.master-ar', function($view)
-        {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
-            $view->with('cat', $categories);
-        });
+        
     
     
         view()->composer('admin.menu', function($view)
         {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
-            $categories2 = \App\Menu::with('children')->where('parent_id','>=',0)->get();
+            $categories = \App\Menu::all();
+           
             $view->with('cate', $categories);
         });
     
@@ -54,13 +50,14 @@ class AppServiceProvider extends ServiceProvider
     
         view()->composer('admin.create-page', function($view)
         {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
+            
+            $categories = \App\Menu::all();
             $view->with('cate', $categories);
         });
         
         view()->composer('admin.create-portfolio', function($view)
         {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
+            $categories = \App\Menu::all();
             $view->with('cate', $categories);
         });
     
@@ -73,7 +70,7 @@ class AppServiceProvider extends ServiceProvider
 
         view()->composer('admin.edit', function($view)
         {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
+            $categories = \App\Menu::all();
             $view->with('cate', $categories);
         });
 
@@ -103,7 +100,7 @@ class AppServiceProvider extends ServiceProvider
 
         view()->composer('partials.header', function($view)
         {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
+            $categories = \App\Menu::all();
             $view->with('cat', $categories);
         });
     
@@ -117,15 +114,12 @@ class AppServiceProvider extends ServiceProvider
     
         view()->composer('menu.create', function($view)
         {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
+            
+            $categories = \App\Menu::all();
             $view->with('cate', $categories);
         });
     
-        view()->composer('admin.pages', function($view)
-        {
-            $categories = \App\Menu::with('children')->where('parent_id','=',0)->get();
-            $view->with('cate', $categories);
-        });
+      
     
     
     

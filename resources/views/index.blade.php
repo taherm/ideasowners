@@ -14,7 +14,7 @@
 					@if(strpos($slide->image, "youtube.com") == false)
 						<li data-transition="fade">
 
-							<img src="{{asset($slide->image)}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+							<img src="{{asset('uploads/'.$slide->image)}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
 							 data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-scalestart="150" data-scaleend="100" data-rotatestart="0"
 							 data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="0" class="rev-slidebg">
 
@@ -63,11 +63,11 @@
 						<div class="col-md-4">
 							<div class="row justify-content-center justify-content-md-start">
 								<div class="col-4">
-									<img class="img-fluid mb-4" src="{{asset($s->icon)}}" alt="">
+									<img class="img-fluid mb-4" src="{{asset('uploads/'.$s->icon)}}" alt="">
 								</div>
 								<div class="col-lg-8">
 									<h4 class="mb-1">{{$s->title}}</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p></p>
 									<p>
 										<a class="btn-flat btn-xs" href="{{ url('services/'.$s->id) }}">View More
 											<i class="fa fa-arrow-right"></i>
@@ -107,7 +107,7 @@
 				<a href="{{ url('portfolio/'.$item->id) }}">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
 						<span class="thumb-info-wrapper">
-							<img src="{{asset($item->image)}}" class="img-fluid" alt="">
+							<img src="{{asset('uploads/'.$item->image)}}" class="img-fluid" alt="">
 							<span class="thumb-info-title">
 								<span class="thumb-info-inner text-1 line-height-xs pt-1">{{$item->title}}</span>
 								<span class="thumb-info-type">{{$item->tag}}</span>

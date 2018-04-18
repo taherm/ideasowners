@@ -43,7 +43,7 @@
 				<a href="{{ url('portfolio/'.$item->id) }}">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
 						<span class="thumb-info-wrapper">
-							<img src="{{asset($item->image)}}" class="img-fluid" alt="">
+							<img src="{{asset('uploads/'.$item->image)}}" class="img-fluid" alt="">
 							<span class="thumb-info-title">
 								<span class="thumb-info-inner text-1 line-height-xs pt-1">{{$item->title}}</span>
 								<span class="thumb-info-type">{{$item->tag}}</span>

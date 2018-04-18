@@ -15,7 +15,7 @@
 							
 						</div>
 						<div class="col-sm-4 mt-4">
-							<img class="img-fluid mt-5" src="{{asset($ser->image)}}" alt="">
+							<img class="img-fluid mt-5" src="{{asset('uploads/'.$ser->image)}}" alt="">
 						</div>
 					</div>
                     </div>
