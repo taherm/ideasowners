@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class RemoveFromMenu extends Migration
+class AddWeblinkToPortfolios extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,9 @@ class RemoveFromMenu extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('portfolios', function($table) {
+            $table->string('weblink');
+        });
     }
 
     /**

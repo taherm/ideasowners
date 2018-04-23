@@ -30,7 +30,7 @@
                 <option value="app">Apps</option>
                 <option value="graphic">Graphic Design</option>
             </select></div>
-    <b>Add to Menu</b>
+    Add to Menu
           <select name="menu" class="form-control">
                 
                 @foreach($cate as $item)
@@ -40,7 +40,10 @@
                     @endforeach
                
             </select>
-
+            <div class="form-group">
+      <label for="exampleInputEmail1">URL</label>
+      <input type="text" class="form-control" name="weblink" value="{{$serv->weblink}}"  >
+    </div>
    <div>
     <button type="submit" class="btn btn-primary">Submit</button>
    </div>  

@@ -141,6 +141,7 @@ class AdminController extends Controller
         $fullImagePath =$imageName;
         $portfolio->image = $fullImagePath;
         $portfolio->tag = request('tag');
+        $portfolio->weblink = request('weblink');
         $portfolio->menu_id=Menu::where('title',request('menu'))->first()->id;
         $portfolio->save();
         return redirect('/admin');
@@ -193,7 +194,9 @@ class AdminController extends Controller
             'title' => 'required',
             'description' => 'required',
             'image' => 'required',
-            'tag'=>'required'
+            'tag'=>'required',
+            'weblink'=>'required'
+
         ]);
         $portfolio = new Portfolio();
         $portfolio->title = request('title');
@@ -205,6 +208,7 @@ class AdminController extends Controller
         $fullImagePath =$imageName;
         $portfolio->image = $fullImagePath;
         $portfolio->tag = request('tag');
+        $portfolio->weblink = request('weblink');
         $portfolio->menu_id=Menu::where('title',request('submenu'))->first()->id;
        
         $portfolio->save();
