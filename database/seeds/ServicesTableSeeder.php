@@ -23,6 +23,20 @@ class ServicesTableSeeder extends Seeder
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
+                'name' =>'Feasibility Study',
+                'description' => '<br>
+                <a href="/portfolios/7">HA Home Made Soap Project</a>
+                <br>
+                <a href="/portfolios/8">Daily Dresses Project</a>
+                <br>
+                <a href="/portfolios/9">Nursery Baby Project in Kuwait</a>',
+                'menu_id' => '1',
+                'icon'=>'5153abe3b776884dd1ab35bd8281e2e9.png',
+                'image' => '7ad17a4f3f7a6e5e7fc7cee32ba94661.jpg',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
                 'name' => 'Graphic Designing',
                 'description' => '<p>Graphic Designing</p>',
                 'menu_id' => '1',
@@ -58,6 +72,7 @@ class ServicesTableSeeder extends Seeder
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]
+            
             
         ]);
     }

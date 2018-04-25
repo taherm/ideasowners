@@ -194,8 +194,8 @@ class AdminController extends Controller
             'title' => 'required',
             'description' => 'required',
             'image' => 'required',
-            'tag'=>'required',
-            'weblink'=>'required'
+            'tag'=>'required'
+            
 
         ]);
         $portfolio = new Portfolio();

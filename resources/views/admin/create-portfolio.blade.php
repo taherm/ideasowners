@@ -21,6 +21,8 @@
     <div class="form-group">
       <label for="exampleInputEmail1">Tag</label>
       <select name="tag" class="form-control">
+      <option value="feasibility">Feasibility Study</option>
+                
                 <option value="logos">Logos</option>
                 <option value="websites">Websites</option>
                 <option value="video">Videos</option>

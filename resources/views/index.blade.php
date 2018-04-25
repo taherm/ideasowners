@@ -98,9 +98,10 @@
 <ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
     <li class="nav-item" data-option-value="*"><a class="nav-link active" href="#">Show All</a></li>
     <li class="nav-item" data-option-value=".websites"><a class="nav-link" href="#">Websites</a></li>
-    <li class="nav-item" data-option-value=".logos"><a class="nav-link" href="#">Logos</a></li>
     <li class="nav-item" data-option-value=".app"><a class="nav-link" href="#">Apps</a></li>
-    <li class="nav-item" data-option-value=".video"><a class="nav-link" href="#">Videos</a></li>
+	<li class="nav-item" data-option-value=".feasibility"><a class="nav-link" href="#">Feasibility Study</a></li>
+    <li class="nav-item" data-option-value=".logos"><a class="nav-link" href="#">Logos</a></li>
+	<li class="nav-item" data-option-value=".video"><a class="nav-link" href="#">Videos</a></li>
     <li class="nav-item" data-option-value=".graphic"><a class="nav-link" href="#">Graphic Design</a></li>
 </ul>
 
