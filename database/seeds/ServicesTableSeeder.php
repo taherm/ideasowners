@@ -23,6 +23,15 @@ class ServicesTableSeeder extends Seeder
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
+                'title' => 'App Development',
+                'description' => '<p>App Development</p>',
+                'menu_id' => '1',
+                'icon'=>'04731938baf0f77af4b3b9180719d40e.png',
+                'image' => 'b33d3f3acbfbcad72dc26aa09039c269.jpg',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
                 'name' =>'Feasibility Study',
                 'description' => '<br>
                 <a href="/portfolios/7">HA Home Made Soap Project</a>

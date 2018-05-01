@@ -7,7 +7,7 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="{{url('/')}}">
-										<img alt="ideasowners" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="90" src="{{url('img/services/logo.jpeg')}}">
+										<img alt="ideasowners" width="110" height="80" data-sticky-width="82" data-sticky-height="40" data-sticky-top="90" src="{{url('img/services/logo2.jpg')}}">
 									</a>
 								</div>
 							</div>
@@ -67,11 +67,51 @@
 														</a>
 													
 													</li>
+
+
+<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="/portfolio" >
+														Portfolio
+														</a>
+														<ul class="dropdown-menu">
+														
+															<li>
+																<a class="dropdown-item" href="#websites">Websites</a>
+															</li>
+															<li>
+																<a class="dropdown-item" href="#app">Apps</a>
+															</li>
+															<li>
+																<a class="dropdown-item" href="#feasibility">Feasibility Study</a>
+															</li>
+															<li>
+																<a class="dropdown-item" href="#logos">Logos</a>
+															</li>
+															<li>
+																<a class="dropdown-item" href="#video">Videos</a>
+															</li>
+															<li>
+																<a class="dropdown-item" href="#graphic">Graphic Design</a>
+															</li>
+
+															
+
+														</ul>
+														
+													</li>
+
+
+
+
+
+
+
+
 												@foreach($cat as $item)
 			                @if($item->services->count()||$item->portfolios->count())
 													
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" style="cursor:default" href="/" >
+														<a class="dropdown-item dropdown-toggle" onclick="return false" style="cursor:default" href="/" >
 														{{$item->title}}
 														</a>
 														<ul class="dropdown-menu">
@@ -101,6 +141,10 @@
 													
 													@endif
 				@endforeach
+				<li class="">
+				<a class="nav-link" href="/courses">
+													Courses
+														</a></li>
 				<li class="">
 														<a class="nav-link" href="/contact">
 													Contact Us

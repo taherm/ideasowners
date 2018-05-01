@@ -27,20 +27,21 @@
 <h2>Portfolio</h2>
 
 <ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-    <li class="nav-item" data-option-value="*"><a class="nav-link active" href="#">Show All</a></li>
-    <li class="nav-item" data-option-value=".websites"><a class="nav-link" href="#">Websites</a></li>
-    <li class="nav-item" data-option-value=".logos"><a class="nav-link" href="#">Logos</a></li>
-    <li class="nav-item" data-option-value=".app"><a class="nav-link" href="#">Apps</a></li>
-    <li class="nav-item" data-option-value=".video"><a class="nav-link" href="#">Videos</a></li>
-    <li class="nav-item" data-option-value=".graphic"><a class="nav-link" href="#">Graphic Design</a></li>
+    
+    <li class="nav-item" data-option-value=".websites"><a class="nav-link" href="#" style="color:#bc6d14;"><b>Websites</b></a></li>
+    <li class="nav-item" data-option-value=".app"><a class="nav-link" href="#" style="color:#bc6d14;"><b>Apps</b></a></li>
+	<li class="nav-item" data-option-value=".feasibility"><a class="nav-link" href="#" style="color:#bc6d14;"><b>Feasibility Study</b></a></li>
+    <li class="nav-item" data-option-value=".logos"><a class="nav-link" href="#" style="color:#bc6d14;"><b>Logos</b></a></li>
+	<li class="nav-item" data-option-value=".video"><a class="nav-link" href="#" style="color:#bc6d14;"><b>Videos</b></a></li>
+    <li class="nav-item" data-option-value=".graphic"><a class="nav-link" href="#" style="color:#bc6d14;"><b>Graphic Design</b></a></li>
 </ul>
 
 <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
-    <div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-    @foreach($portfolio as $item)
-		<div class="col-lg-4 isotope-item {{$item->tag}}">
+	<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
+	@foreach($portfolio as $item)
+		<div class="col-lg-4 isotope-item {{$item->tag}}" id="{{$item->tag}}">
 			<div class="portfolio-item">
-				<a href="{{ url('portfolio/'.$item->id) }}">
+				<a href="{{ url('portfolios/'.$item->id) }}">
 					<span class="thumb-info thumb-info-lighten thumb-info-bottom-info thumb-info-centered-icons">
 						<span class="thumb-info-wrapper">
 							<img src="{{asset('uploads/'.$item->image)}}" class="img-fluid" alt="">
@@ -54,7 +55,7 @@
 			</div>
 		</div>
 		@endforeach
-    </div>
+	</div>
 </div>
 
 </div>

@@ -142,8 +142,55 @@ class PortfoliosTableSeeder extends Seeder
                 'image' => 'b7133b8181f261fdb87b5b5f48176e9e.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'title' => 'Home Key',
+                'description' => '
+                <p>Search for Properties and Real Estates and save the search information for the next time.<br>
+                 Do a map search to make it easier to search in a way that suits you.
+                Make adjustments to your search to find the right property for you.<br>
+                We help you to access in a smart way almost the same as looking for a property in person.<br>
+                Search thoroughly and in detail about the property.<br>
+                Search Properties for sale, rent or share.<br>
+                Save the properties in the favorite section to quickly find them for the next time.<br>
+                Smart alerts and notifications to help you find out the things that you may be interested in.<br>
+                </p>
+                <br>
+                <a href="https://play.google.com/store/apps/details?id=com.homekeyapp">
+                https://play.google.com/store/apps/details?id=com.homekeyapp</a>',
+                'weblink'=>'https://play.google.com/store/apps/details?id=com.homekeyapp',
+                'menu_id' => '2',
+                'tag'=>'logos',
+                'image' => '1fccb29aa14ff936fe39cffd432fe7eb.jpeg',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'title' =>'MissToMrs',
+                'description' => '<p>Miss to Mrs is an application that covers all the details of everything you may need in order to organize your wedding away from stress and hassle.
+                </p>
+                <br>
+                <a href="https://play.google.com/store/apps/details?id=com.misstomrs">https://play.google.com/store/apps/details?id=com.misstomrs</a>',
+                'weblink'=>'https://play.google.com/store/apps/details?id=com.misstomrs',
+                'menu_id' => '2',
+                'tag'=>'logos',
+                'image' => '8153a430b0f6b0aa2cbb181c6c4d113b.jpeg',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'title' =>'Abaty',
+                'description' => '<p>Abati is an application concerned for Abyat and hijab fashion. the app target the gulf market (kuwait, saudi arabia, oman, dubai , UAE, Qatar, Bahain)</p>
+                <br>
+                <a href="https://play.google.com/store/apps/details?id=com.abaty">https://play.google.com/store/apps/details?id=com.abaty
+                </a>',
+                'weblink'=>'https://play.google.com/store/apps/details?id=com.abaty',
+                'menu_id' => '2',
+                'tag'=>'logos',
+                'image' => 'f63ad699f42b8ea25789a9215c0758b2.jpeg',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ]
-            
 
         ]);
 

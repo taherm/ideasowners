@@ -24,6 +24,9 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/courses', function () {
+    return view('courses');
+});
 
 Route::get('/portfolio', function () {
     $portfolio=Portfolio::all();
