@@ -190,8 +190,44 @@ class PortfoliosTableSeeder extends Seeder
                 'image' => 'f63ad699f42b8ea25789a9215c0758b2.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
-            ]
+            ],
+            [
+                'title' =>'StartEnd',
+                'description' => '<p>StartEnd lets you cut YouTube clips the way you want in which you choose the Start and End time. for example you can watch a video and share it from youtube with only two minutes out of 30 minutes. </p>
 
+                <br>
+                <a href="https://itunes.apple.com/kw/app/startend/id825622922?mt=8">https://itunes.apple.com/kw/app/startend/id825622922?mt=8</a>',
+                'weblink'=>'https://itunes.apple.com/kw/app/startend/id825622922?mt=8',
+                'menu_id' => '2',
+                'tag'=>'app',
+                'image' => 'a9ae16f39bb86b208acc848f57d17d5e.jpeg',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'title' =>'Vazzat',
+                'description' => '<p>Send flowers and gifts Immediately or on Scheduled Date to your loved ones from variety of products from different stores with easy steps through our Vazzat App</p>
+                <p>&nbsp;</p>
+                <p><a href="https://itunes.apple.com/kw/app/vazzat/id1301282679?mt=8">https://itunes.apple.com/kw/app/vazzat/id1301282679?mt=8</a></p>',
+                'weblink'=>'https://itunes.apple.com/kw/app/vazzat/id1301282679?mt=8',
+                'menu_id' => '2',
+                'tag'=>'app',
+                'image' => '703b8e97e4fc24cb374369bbabaa0bdc.jpeg',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'title' =>'ZajilKnet',
+                'description' => '<pre id="tw-target-text" class="tw-data-text tw-ta tw-text-small" dir="ltr" style="text-align: left; height: 240px;" data-placeholder="Translation" data-fulltext=""><span lang="en">With the development of accelerated technology and the use of human beings, everything became possible and easy
+                Which allows the user to send messages of thanks and invitations easily and smooth, in addition to the possibility of payment by the net through the application protection and safety<br /></span></pre>
+                <p><a href="https://itunes.apple.com/kw/app/zajilknet/id1117969574?mt=8">https://itunes.apple.com/kw/app/zajilknet/id1117969574?mt=8</a></p>',
+                'weblink'=>'https://itunes.apple.com/kw/app/zajilknet/id1117969574?mt=8',
+                'menu_id' => '2',
+                'tag'=>'app',
+                'image' => '8a76288657f58c26706311fdb2761ec0.jpeg',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]
         ]);
 
     }

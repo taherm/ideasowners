@@ -41,33 +41,33 @@
 <div class="row align-items-center">
 						<div class="col-lg-10">
 							<p class="lead">
-							<span class="alternative-font">Ideas Owners</span>is a leading creative Media agency and Websites & Mobile Apps based in Kuwait. We provide marketing solutions to small to large businesses. Our motive are creativity and client satisfaction to provide the best solutions to the clients. </p>
+							<span class="alternative-font">Ideas Owners</span></p>
+							<p>is a leading creative Media agency, Websites & Mobile Apps Development based in Kuwait. We provide marketing solutions to small & large Companies. We Aimed to client satisfaction by providing the best solutions to the clients.
+</p>
 						</div>
 						
 					</div>
 
 
 <div class="row align-items-center">
-						<div class="col-lg-10">
-							<p class="lead">
-							<span class="alternative-font">Ideas Owners on Play Store</span><a style="color:black" href="https://play.google.com/store/apps/developer?id=Ideasowners"> Click Here</a> </p>
-						</div>
-						
+						<div class="col-lg-6 col-sm-12">
+							<a href="https://play.google.com/store/search?q=ideasowners&c=apps"> <img src="{{asset('uploads/playstore.png')}}" style="width:300px;height:80px"/></a>
+							</div>
+							<div class="col-lg-6 col-sm-12">
+							<a href="https://itunes.apple.com/kw/developer/mubarak-esmail/id825622925?mt=8"> <img src="{{asset('uploads/appstore.jpeg')}}" style="width:300px;height:80px"/></a>
+							
+							</div>
 					</div>
 
-<div class="row align-items-center">
-						<div class="col-lg-10">
-							<p class="lead">
-							<span class="alternative-font">Ideas Owners on App Store</span><a style="color:black" href="https://itunes.apple.com/il/developer/mubarak-esmail/id825622925?mt=8"> Click Here</a> </p>
-						</div>
-						
-					</div>
+
 
 
 <div class="row mt-1">
 						<div class="col-lg-7 col-xl-8">
 							<h3 class="heading-primary"><strong>Who</strong> We Are</h3>
-							<p><span class="alternative-font">What differentiates us</span> is our ability to understand client business well and design digital marketing solutions that exactly suite their needs. We not only understand your idea but we understand your customers which help us create and effective and result-oriented solutions.</p>
+							<p><span class="alternative-font">What differentiates us</span></p>
+							<p> What differentiates us
+our ability to understand the clients' business well and design varieties of marketing solutions that exactly suite clients needs whether it's increase in sales or Awareness Campaigns. We work hard to identify the client requirements which help us create an effective campaigns and Projects.</p>
 						</div>
 						
 					</div>
