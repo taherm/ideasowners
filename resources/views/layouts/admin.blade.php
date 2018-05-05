@@ -95,6 +95,11 @@
         <i class="fa fa-angle-right"></i>
         <span>Dashboard</span>
     </h2>
+    @if($flash=session('message'))
+        <div class="alert alert-success" id="flash-message">
+  {{$flash}}
+</div>
+@endif
 </div>                        <div class="content-top" >
 
                 
@@ -160,6 +165,23 @@
 
 
 <script>
+
+
+
+$(document).ready(function () {
+        $(".select2").select2();
+        $("[data-toggle=tooltip]").tooltip();
+      });
+
+      $(document).on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        if ( $( "#deleteModal" ).length ) {
+          var link = button.data('link'); // Extract info from data-* attributes
+          $("#deleteModal").attr("action", link);
+        }
+      });
+
+
 tinymce.init({
   selector: '#editor',
   plugins: 'image code',
