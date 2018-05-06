@@ -28,6 +28,7 @@ public $data;
      */
     public function build()
     {
+        $this->replyTo($this->data['email']);
         return $this->view('emails.contact');
     }
 }

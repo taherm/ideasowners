@@ -33,9 +33,9 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<br>
 
-
-
+<a style="width:100%;" class="btn btn-primary btn-lg" href="https://mubarakesmail.ideasowners.net/reserve-courses"> Reserve Your Courses</a>
 
 
 						</div>

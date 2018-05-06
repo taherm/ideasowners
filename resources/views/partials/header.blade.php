@@ -76,22 +76,22 @@
 														<ul class="dropdown-menu">
 														
 															<li>
-																<a class="dropdown-item" href="#websites">Websites</a>
+																<a class="dropdown-item" href="/portfolio/#websites">Websites</a>
 															</li>
 															<li>
-																<a class="dropdown-item" href="#app">Apps</a>
+																<a class="dropdown-item" href="/portfolio/#app">Apps</a>
 															</li>
 															<li>
-																<a class="dropdown-item" href="#feasibility">Feasibility Study</a>
+																<a class="dropdown-item" href="/portfolio/#feasibility">Feasibility Study</a>
 															</li>
 															<li>
-																<a class="dropdown-item" href="#logos">Logos</a>
+																<a class="dropdown-item" href="/portfolio/#logos">Logos</a>
 															</li>
 															<li>
-																<a class="dropdown-item" href="#video">Videos</a>
+																<a class="dropdown-item" href="/portfolio/#video">Videos</a>
 															</li>
 															<li>
-																<a class="dropdown-item" href="#graphic">Graphic Design</a>
+																<a class="dropdown-item" href="/portfolio/#graphic">Graphic Design</a>
 															</li>
 
 															
