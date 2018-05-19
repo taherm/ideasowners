@@ -108,7 +108,7 @@
 
 
 												@foreach($cat as $item)
-			                @if($item->services->count()||$item->portfolios->count())
+			                @if($item->services->count())
 													
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" onclick="return false" style="cursor:default" href="/" >
@@ -120,13 +120,6 @@
 																<a class="dropdown-item" href="{{url($submenu->getTable().'/'.$submenu->id)}}">{{$submenu->title}}</a>
 															</li>
 															@endforeach
-															@if($item->portfolios->count())
-															@foreach($item->portfolios as $submenu)
-															<li>
-																<a class="dropdown-item" href="{{url($submenu->getTable().'/'.$submenu->id)}}">{{$submenu->title}}</a>
-															</li>
-															@endforeach
-															@endif
 														</ul>
 														
 													</li>

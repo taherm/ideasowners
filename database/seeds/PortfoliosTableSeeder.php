@@ -29,7 +29,7 @@ class PortfoliosTableSeeder extends Seeder
                 <a href="https://play.google.com/store/apps/details?id=com.homekeyapp">
                 https://play.google.com/store/apps/details?id=com.homekeyapp</a>',
                 'weblink'=>'https://play.google.com/store/apps/details?id=com.homekeyapp',
-                'menu_id' => '2',
+                
                 'tag'=>'app',
                 'image' => '1fccb29aa14ff936fe39cffd432fe7eb.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -39,7 +39,7 @@ class PortfoliosTableSeeder extends Seeder
                 'title' => 'Tasaweeq',
                 'description' => '<p>Tasaweeq</p>',
                 'weblink'=>'http://tasaweeq.com/',
-                'menu_id' => '2',
+                
                 'tag'=>'websites',
                 'image' => 'db5f98da60b196fb479b9eb80eebae0c.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -54,7 +54,7 @@ class PortfoliosTableSeeder extends Seeder
                 <a href="https://play.google.com/store/apps/details?id=com.vazzat">https://play.google.com/store/apps/details?id=com.vazzat
                 </a>',
                 'weblink'=>'https://play.google.com/store/apps/details?id=com.vazzat',
-                'menu_id' => '2',
+                
                 'tag'=>'websites',
                 'image' => 'd668d438ae9f6ebd404aae215ad11f6e.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -76,7 +76,7 @@ class PortfoliosTableSeeder extends Seeder
                 <br>
                 <a href="http://petrolet.com/">http://petrolet.com/</a>',
                 'weblink'=>'http://petrolet.com/',
-                'menu_id' => '2',
+                
                 'tag'=>'websites',
                 'image' => '4db36f2cc52cda78b80df4230ec3da82.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -89,7 +89,7 @@ class PortfoliosTableSeeder extends Seeder
                 <a href="https://play.google.com/store/apps/details?id=com.abaty">https://play.google.com/store/apps/details?id=com.abaty
                 </a>',
                 'weblink'=>'https://play.google.com/store/apps/details?id=com.abaty',
-                'menu_id' => '2',
+                
                 'tag'=>'app',
                 'image' => 'f63ad699f42b8ea25789a9215c0758b2.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -102,7 +102,7 @@ class PortfoliosTableSeeder extends Seeder
                 <br>
                 <a href="https://play.google.com/store/apps/details?id=com.misstomrs">https://play.google.com/store/apps/details?id=com.misstomrs</a>',
                 'weblink'=>'https://play.google.com/store/apps/details?id=com.misstomrs',
-                'menu_id' => '2',
+                
                 'tag'=>'app',
                 'image' => '8153a430b0f6b0aa2cbb181c6c4d113b.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -114,7 +114,7 @@ class PortfoliosTableSeeder extends Seeder
                 <br>
                 <a href="/uploads/HA_Home_Made_Soap.pdf">PDF</a>',
                 'weblink'=>'/',
-                'menu_id' => '2',
+                
                 'tag'=>'feasibility',
                 'image' => '6d2eb2856e0ddbc6daac76035f3a761e.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -125,7 +125,7 @@ class PortfoliosTableSeeder extends Seeder
                 'description' => '<p>يعتبر مشروع إنشاء مصنع ملابس جاهزة نسائية من المشاريع الحديثة الهامة والتي تفيد المجتمع بجميع طوائفة وفي ظل التقدم التكنولوجي الحديث فكان لابد من أن نفكر في كيفية استغلال هذه التكنولوجيا بشكل فعال داخل المجتمع ومن هنا جاء التفكير في إنشاء مصنع للملابس النسائية الجاهزه و للملابس النسائية التى ترتديها النساء وظيفتنان أساسيتان هما المظهر اللائق والملائمة مع ثقافة البلاد وأيضاً المحافظة على الصحة العامة ومع التغيرات التي طرأت عبر مئات السنين الماضية على مستوى المعيشة الثقافي والإجتماعي ونمط الملابس ، غذت الملابس الخارجية جزء أساسي&nbsp; يعبرعن&nbsp; شخصية الإنسان بغض النظرعن وظيفتها الاساسية زاد الإهتمام المتعلق بجودة الملابس من حيث التصميم ومادة الصنع. <br /><br />وسوف يقوم المشروع موضوع الدراسة بإنتاج الملابس النسائية الجاهزة بمواصفات فنية وجودة عالية وتوفير الملابس الجاهزة المنتجة محليا بأسعار مناسبة وجودة عالية تفي بمتطلبات المنافسة للمنتجات المستوردة والتي تتناسب مع الذوق الخليجي، حيث أن هناك نواقص مازالت موجودة في صناعة الملابس الجاهزة وهي ما يمكن الاستفادة منها عبر رفع القيمة المضافة من حيث تقنيات الصناعة وتصميم الملابس والذوق العام الذي ينظر إليه المستهلك بالدرجة الأولى. وسوف يقوم المشروع بإنتاج الملابس الجاهزة من جميع الأقمشة مثل (العباءات والدارعات والقمصان الحريمي بمختلف أوزانها وأحجامها ومنتجات الأزياء)..<br />المشروع المقترح يقوم بإنتاج الملابس النسائية الجاهزه والتي تغطي احتياجات الإناث بجميع الفئات وسيقوم المشروع المقترح بإنتاج الأصناف التالية : <br />1.&nbsp;&nbsp;&nbsp; دراعات للفتيات والنساء موديل A<br />2.&nbsp;&nbsp;&nbsp; عبايات للفتيات والنشاء&nbsp; موديل A<br />3.&nbsp;&nbsp;&nbsp; عبايات للفتيات والنشاء&nbsp; موديل B<br />4.&nbsp;&nbsp;&nbsp; عبايات للفتيات والنشاء&nbsp; موديل B<br />5.&nbsp;&nbsp;&nbsp; بنطلون للسيدات والنساء.<br />6.&nbsp;&nbsp;&nbsp; ملابس خارجية اخرى للسيدات والبنات. <br />7.&nbsp;&nbsp;&nbsp; ملابس ينوفورم ( النساء &ndash; البنات). <br /><br />يمكن تصنيف الملابس النسائية إلى الانواع التالية : <br />صناعة الأزياء النسائية الرسمية أو "الفورمال". <br />صناعية الازياء النسائية العملية. <br />صناعة الأزياء النسائية المنزلية. <br />صناعة الازياء النسائية&nbsp; للمناسبات العامة والخاصة. <br /><br />يهدف المشروع المقترح إلى إنتاج الملابس النسائية والمصنوعة من النسيج القطني والحرير الطبيعي وغيرها وتوفيرها في السوق المحلي والخليجي بسعر مناسب.&nbsp; <br />ومن أهم مبررات المشروع:</p>
                 <p><br /> <a href="../../uploads/daily_dresses.pdf">PDF</a></p>',
                 'weblink'=>'/',
-                'menu_id' => '2',
+                
                 'tag'=>'feasibility',
                 'image' => '30442c19bad4c896515ac4b9c3966d3f.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -137,7 +137,7 @@ class PortfoliosTableSeeder extends Seeder
                 <br>
                 <a href="/uploads/nursery_baby.pdf">PDF</a>',
                 'weblink'=>'/',
-                'menu_id' => '2',
+                
                 'tag'=>'feasibility',
                 'image' => 'b7133b8181f261fdb87b5b5f48176e9e.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -159,7 +159,7 @@ class PortfoliosTableSeeder extends Seeder
                 <a href="https://play.google.com/store/apps/details?id=com.homekeyapp">
                 https://play.google.com/store/apps/details?id=com.homekeyapp</a>',
                 'weblink'=>'https://play.google.com/store/apps/details?id=com.homekeyapp',
-                'menu_id' => '2',
+                
                 'tag'=>'logos',
                 'image' => '1fccb29aa14ff936fe39cffd432fe7eb.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -172,7 +172,7 @@ class PortfoliosTableSeeder extends Seeder
                 <br>
                 <a href="https://play.google.com/store/apps/details?id=com.misstomrs">https://play.google.com/store/apps/details?id=com.misstomrs</a>',
                 'weblink'=>'https://play.google.com/store/apps/details?id=com.misstomrs',
-                'menu_id' => '2',
+                
                 'tag'=>'logos',
                 'image' => '8153a430b0f6b0aa2cbb181c6c4d113b.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -185,7 +185,7 @@ class PortfoliosTableSeeder extends Seeder
                 <a href="https://play.google.com/store/apps/details?id=com.abaty">https://play.google.com/store/apps/details?id=com.abaty
                 </a>',
                 'weblink'=>'https://play.google.com/store/apps/details?id=com.abaty',
-                'menu_id' => '2',
+                
                 'tag'=>'logos',
                 'image' => 'f63ad699f42b8ea25789a9215c0758b2.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -198,7 +198,7 @@ class PortfoliosTableSeeder extends Seeder
                 <br>
                 <a href="https://itunes.apple.com/kw/app/startend/id825622922?mt=8">https://itunes.apple.com/kw/app/startend/id825622922?mt=8</a>',
                 'weblink'=>'https://itunes.apple.com/kw/app/startend/id825622922?mt=8',
-                'menu_id' => '2',
+                
                 'tag'=>'app',
                 'image' => 'a9ae16f39bb86b208acc848f57d17d5e.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -210,7 +210,7 @@ class PortfoliosTableSeeder extends Seeder
                 <p>&nbsp;</p>
                 <p><a href="https://itunes.apple.com/kw/app/vazzat/id1301282679?mt=8">https://itunes.apple.com/kw/app/vazzat/id1301282679?mt=8</a></p>',
                 'weblink'=>'https://itunes.apple.com/kw/app/vazzat/id1301282679?mt=8',
-                'menu_id' => '2',
+                
                 'tag'=>'app',
                 'image' => '703b8e97e4fc24cb374369bbabaa0bdc.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -222,7 +222,7 @@ class PortfoliosTableSeeder extends Seeder
                 Which allows the user to send messages of thanks and invitations easily and smooth, in addition to the possibility of payment by the net through the application protection and safety<br /></span></pre>
                 <p><a href="https://itunes.apple.com/kw/app/zajilknet/id1117969574?mt=8">https://itunes.apple.com/kw/app/zajilknet/id1117969574?mt=8</a></p>',
                 'weblink'=>'https://itunes.apple.com/kw/app/zajilknet/id1117969574?mt=8',
-                'menu_id' => '2',
+                
                 'tag'=>'app',
                 'image' => '8a76288657f58c26706311fdb2761ec0.jpeg',
                 'created_at' => date('Y-m-d H:i:s'),

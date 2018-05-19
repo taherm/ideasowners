@@ -36,7 +36,7 @@
                         <td>{{$s->tag}}</td>
                         
                         <td> <a class="btn btn-default" href="{{ url('admin/edit-portfolio/'.$s->id) }}">Edit</a> </td>
-                     <td> <form method="POST" action="{{url('/admin/delete-portfolio/'.$s->id)}}">
+                     <td> <form method="POST" action="{{url('/admin/delete-portfolio/'.$s->id)}}" class="delete">
 										{{ csrf_field() }}
 										<input name="_method" value="delete" type="hidden">
 										<button class="btn btn-danger" type="submit">Delete</button>

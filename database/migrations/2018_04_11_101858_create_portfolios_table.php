@@ -14,11 +14,13 @@ class CreatePortfoliosTable extends Migration
     public function up()
     {
         Schema::create('portfolios', function (Blueprint $table) {
+         
             $table->increments('id');
             $table->string('title');
             $table->longText('description');
             $table->string('image');
             $table->string('tag');
+            $table->string('weblink');
             
             
             $table->timestamps();

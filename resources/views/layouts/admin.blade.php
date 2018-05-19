@@ -255,6 +255,14 @@ $("#deleteModal").attr("action", link);
 });
 
 </script>
+
+
+<script>
+    $(".delete").on("submit", function(){
+        return confirm("Do you want to delete this item?");
+    });
+</script>
+
 </body>
 </html>
 

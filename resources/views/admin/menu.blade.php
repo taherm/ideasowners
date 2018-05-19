@@ -26,7 +26,8 @@
                         </a>
                         </td>
 
-                     <td>   <form method="POST" action="{{url('/admin/delete-menu/'.$item->id)}}">
+                     <td> 
+                       <form class="delete" method="POST" action="{{url('/admin/delete-menu/'.$item->id)}}">
 										{{ csrf_field() }}
 										<input name="_method" value="delete" type="hidden">
 										<button class="btn btn-danger" type="submit">Delete</button>
