@@ -222,7 +222,7 @@ class AdminController extends Controller
         $portfolio->image = $fullImagePath;
         $portfolio->tag = request('tag');
         $portfolio->weblink = request('weblink');
-        $portfolio->menu_id=Menu::where('title',request('submenu'))->first()->id;
+        //$portfolio->menu_id=Menu::where('title',request('submenu'))->first()->id;
        
         $portfolio->save();
         session()->flash('message','Portfolio Added!');
