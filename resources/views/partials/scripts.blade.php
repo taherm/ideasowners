@@ -37,7 +37,7 @@
       userId: '18973642',
       limit:'4',
       resolution:'low_resolution',
-      accessToken: '18973642.1677ed0.b517528ee80c4992885d561a7237845e',
+      accessToken: '18973642.1677ed0.4afd9743af5545219d07f80c56ea9c71',
       template: '  <div class="col-sm-3"><a href="@{{link}}"><img src="@{{image}}" class="img-thumbnail img-responsive"/></a> </div>'
             });
     feed.run();

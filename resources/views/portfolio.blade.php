@@ -38,6 +38,20 @@
 
 <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
 	<div class="row portfolio-list sort-destination" data-sort-id="portfolio">
+
+<div class="col-lg-4 isotope-item video" id="video">
+			<div class="portfolio-item">
+				
+						 
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/3mFyJnAACTI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>   
+    	<span class="thumb-info-title">
+		<span class="thumb-info-type">Pitchmastic PmB</span>
+								
+					</span>
+				</div>
+		</div>
+
+
 	@foreach($portfolio as $item)
 		<div class="col-lg-4 isotope-item {{$item->tag}}" id="{{$item->tag}}">
 			<div class="portfolio-item">

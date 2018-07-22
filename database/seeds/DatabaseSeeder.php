@@ -11,9 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([
-           
-        ]);
+      
         $this->call(MenusTableSeeder::class);
         $this->call(ServicesTableSeeder::class);
         $this->call(PortfoliosTableSeeder::class);

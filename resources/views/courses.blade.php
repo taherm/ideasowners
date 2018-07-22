@@ -17,11 +17,9 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="{{asset('uploads/1.jpeg')}}" alt="First slide">
+      <img class="d-block w-100" src="{{asset('uploads/Slider.jpg')}}" alt="First slide">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{asset('uploads/Slider.jpg')}}" alt="Second slide">
-    </div>
+   
    
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -35,7 +33,7 @@
 </div>
 <br>
 
-<a style="width:100%;" class="btn btn-primary btn-lg" href="https://mubarakesmail.ideasowners.net/reserve-courses"> Reserve Your Courses</a>
+<a style="width:100%;" class="btn btn-primary btn-lg" href="http://www.mubarakalesmail.com/reserve-courses"> Reserve Your Courses</a>
 
 
 						</div>
