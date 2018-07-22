@@ -29,16 +29,7 @@
                 <option value="app">Apps</option>
                 <option value="graphic">Graphic Design</option>
             </select></div>
-    Add to Menu
-          <select name="submenu" class="form-control">
-               
-                @foreach($cate as $item)
-               
-                    <option value="{{$item->title}}">{{ $item->title }}</option>
-                   
-                    @endforeach
-               
-            </select>
+   
 
             
 
